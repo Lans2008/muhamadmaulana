@@ -1,0 +1,560 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #141516;
+  z-index: -0;
+  height: 1680px;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+  background-color: #068fff;
+  align-items: center;
+  padding: 16px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.navbar-kiri {
+  width: 25%;
+  background-color: #068fff;
+  display: flex;
+  padding: 14px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  justify-content: center;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0.8;
+  left: -6px;
+  top: -5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+#jumbotron {
+  display: flex;
+  width: 100%;
+  height: 45rem;
+  background-image: url(img/Desktop\ -\ 5.png);
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.side-kiri {
+  width: 45%;
+  height: 40em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.maulana {
+  margin-top: 150px;
+  width: 275px;
+  height: 27em;
+  margin-right: 100px;
+}
+
+.side-kanan {
+  width: 60%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.side-kanan-dalam {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.side-kanan-dalam a {
+  text-decoration: none;
+}
+
+.side-kanan h1 {
+  font-size: 50px;
+}
+
+.side-kanan-dalam p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #068fff;
+  color: white;
+  width: 6.4rem;
+  border-radius: 10px;
+  margin-top: 3em;
+  padding: 0.8rem;
+}
+
+.button h6 {
+  font-size: 1rem;
+  font-weight: 510;
+}
+
+#about {
+  background-image: url(img/Desktop\ -\ 6.png);
+  background-size: 100%;
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-top: 8rem;
+}
+
+.tentang {
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.garis-tentang {
+  overflow: hidden;
+  margin-top: 0.5em;
+  background-color: #068fff;
+  width: 5em;
+  border-radius: 50px;
+  color: #068fff;
+  height: 0.3em;
+}
+
+.text-tentang {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.7em;
+  width: 100%;
+}
+
+.text-tentang-kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 15em;
+}
+
+.text-tentang-kanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 15em;
+}
+
+#projek {
+  background-image: url(img/Desktop\ -\ 7.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 7em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.projek-saya {
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projek-satu,
+.projek-dua,
+.projek-tiga {
+  width: 27%;
+  height: 17em;
+  overflow: hidden;
+  margin: 1em;
+  border-radius: 10px;
+  background-color: #068fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projek-empat,
+.projek-lima {
+  width: 27%;
+  height: 17em;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #068fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5em;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
+.gambar-satu,
+.gambar-dua,
+.gambar-tiga,
+.gambar-empat,
+.gambar-lima {
+  width: 100%;
+  height: 100%;
+}
+
+.abh {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#form {
+  padding-top: 7em;
+  background-image: url(img/Desktop\ -\ 8.png);
+  background-size: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form {
+  margin-bottom: 100px;
+  width: 60%;
+}
+
+.kontak-saya {
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.form-input {
+  width: 100%;
+  height: 30px;
+}
+
+.form-text {
+  margin-bottom: 20px;
+}
+
+.form-nama,
+.form-email,
+.form-pesan {
+  margin-top: 40px;
+}
+
+.form-button {
+  margin-top: 30px;
+  background-color: #068fff;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #068fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+/* Hamburger Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, 0px);
+  background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0px);
+  background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .navbar-kiri {
+    width: 35%;
+    padding: 16px;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .menu-toggle {
+    display: flex;
+    background-color: #068fff;
+    padding: 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .menu-toggle input {
+    left: 3px;
+    opacity: 0;
+    width: 55px;
+    height: 55px;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 65vh;
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #068fff;
+    z-index: -1;
+    transform: translate(100%);
+    transition: all 1s;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  nav ul.slide {
+    transform: translateX(0);
+  }
+  /* Jumbotron */
+  #jumbotron {
+    padding-top: 5rem;
+    height: 13.4em;
+    padding-bottom: 0px;
+  }
+
+  .side-kiri {
+    justify-content: center;
+    width: 40%;
+    height: 14em;
+  }
+
+  .side-kanan-dalam {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .side-kanan-dalam h1 {
+    font-size: 1.5rem;
+  }
+  .side-kanan-dalam p {
+    margin-top: 0.2em;
+    font-size: 0.8rem;
+  }
+
+  .button {
+    margin-top: 0.8em;
+    padding: 0.8rem;
+    width: 3.8rem;
+  }
+
+  .button h6 {
+    font-size: 0.6rem;
+  }
+
+  .maulana {
+    width: 55%;
+    height: 9em;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* Jumbotron End */
+  /* About */
+  #about {
+    padding-top: 2em;
+  }
+  .tentang {
+    font-size: 1em;
+  }
+
+  .text-tentang {
+    margin-top: 1em;
+  }
+
+  .text-tentang-kiri {
+    font-size: 0.45em;
+  }
+
+  .text-tentang-kanan {
+    font-size: 0.45em;
+  }
+
+  /* About End */
+  /* Project */
+  #projek {
+    padding-top: 2em;
+  }
+
+  .card {
+    justify-content: center;
+  }
+
+  .projek-saya {
+    font-size: 0.8em;
+  }
+
+  .projek-satu,
+  .projek-dua,
+  .projek-tiga,
+  .projek-empat,
+  .projek-lima {
+    height: 6em;
+    margin: 0.5em;
+    margin-top: 0.6em;
+  }
+
+  .abh {
+    height: 2em;
+  }
+
+  .abh p {
+    font-size: 0.6em;
+  }
+  /* Project End */
+  /* Kontak */
+  #form {
+    padding-top: 2em;
+  }
+  .kontak-saya {
+    font-size: 0.8em;
+  }
+
+  .form-text {
+    margin-bottom: 1em;
+  }
+
+  .form-nama,
+  .form-email,
+  .form-pesan {
+    margin-top: 1em;
+  }
+
+  .form-button {
+    width: 6em;
+    height: 2.5em;
+  }
+
+  .form-button p {
+    font-size: 0.8rem;
+  }
+  
+  .kontak-saya .garis-tentang  {
+    width: 5em;
+    height: 0.4em;
+  }
+
+  /* Kontak End */
+}
